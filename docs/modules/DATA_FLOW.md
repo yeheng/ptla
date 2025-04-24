@@ -17,4 +17,4 @@
 响应数据 ← Vue组件 ← Tauri命令 ← Actix-web API ← SQLx查询 ← SQLite
 ```
 
-[返回系统设计文档](../SYSTEM_DESIGN.md)
+[返回系统设计文档](../../README.md)

@@ -23,4 +23,4 @@
 - [日志表设计](./database/LOG_TABLES.md)
 - [定时任务表设计](./database/SCHEDULED_JOB_TABLES.md)
 
-[返回系统设计文档](../SYSTEM_DESIGN.md)
+[返回系统设计文档](../../README.md)
