@@ -1,18 +1,18 @@
 {
   "$schema": "https://schema.tauri.app/config/2",
-  "productName": "todo",
+  "productName": "PLTA",
   "version": "0.1.0",
-  "identifier": "com.todo.app",
+  "identifier": "com.plta.app",
   "build": {
-    "beforeDevCommand": "bun run dev",
+    "beforeDevCommand": "npm run dev",
     "devUrl": "http://localhost:1420",
-    "beforeBuildCommand": "bun run build",
+    "beforeBuildCommand": "npm run build",
     "frontendDist": "../dist"
   },
   "app": {
     "windows": [
       {
-        "title": "todo",
+        "title": "PLTA",
         "width": 800,
         "height": 600
       }
