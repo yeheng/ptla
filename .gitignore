@@ -21,3 +21,4 @@ dist/
 .vscode/
 .DS_Store
 yarn.lock
+package-lock.json
