@@ -15,4 +15,4 @@
 - **SQLx**: 异步SQL查询构建器
 - **SQLite**: 轻量级关系型数据库
 
-[返回系统设计文档](../SYSTEM_DESIGN.md) 
+[返回系统设计文档](../SYSTEM_DESIGN.md)
