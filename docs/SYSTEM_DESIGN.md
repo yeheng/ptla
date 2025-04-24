@@ -1,4 +1,4 @@
-# 桌面应用程序系统设计文档
+# PLTA system design
 
 ## 目录
 
@@ -8,7 +8,8 @@
 4. [数据流设计](modules/DATA_FLOW.md)
 5. [前端模块设计](modules/FRONTEND_MODULES.md)
 6. [后端模块设计](modules/BACKEND_MODULES.md)
-7. [数据库设计](modules/DATABASE_DESIGN.md)
+7. [插件系统设计](modules/plugin-system-design.md)
+8. [数据库设计](modules/DATABASE_DESIGN.md)
    - [用户表设计](modules/database/USER_TABLES.md)
    - [会话表设计](modules/database/SESSION_TABLES.md)
    - [任务表设计](modules/database/TASK_TABLES.md)
@@ -33,6 +34,8 @@
 project/
 ├── src-tauri/           # Tauri后端代码
 │   ├── src/            # Rust源代码
+│   │   ├── plugins/   # 插件系统实现
+│   │   └── runtime/   # 插件运行时
 │   ├── Cargo.toml      # Rust依赖配置
 │   └── tauri.conf.json # Tauri配置
 ├── src/                # Vue前端代码
@@ -40,6 +43,9 @@ project/
 │   ├── views/         # 页面视图
 │   ├── stores/        # 状态管理
 │   └── assets/        # 静态资源
+├── plugins/           # 插件目录
+│   ├── official/     # 官方插件
+│   └── community/    # 社区插件
 ├── public/            # 公共资源
 ├── package.json       # 前端依赖配置
 └── vite.config.ts    # Vite配置
