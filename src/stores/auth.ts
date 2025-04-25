@@ -5,44 +5,44 @@ interface User {
   id: number
   username: string
   email: string
-  role: string
 }
 
 export const useAuthStore = defineStore('auth', () => {
   const user = ref<User | null>(null)
-  const token = ref<string | null>(null)
   const isAuthenticated = ref(false)
 
-  function setUser(userData: User | null) {
-    user.value = userData
-    isAuthenticated.value = !!userData
+  function setUser(newUser: User | null) {
+    user.value = newUser
+    isAuthenticated.value = !!newUser
   }
 
-  function setToken(newToken: string | null) {
-    token.value = newToken
-    localStorage.setItem('token', newToken || '')
+  function login(credentials: { username: string; password: string }) {
+    // TODO: 实现实际的登录逻辑
+    setUser({
+      id: 1,
+      username: credentials.username,
+      email: `${credentials.username}@example.com`
+    })
+  }
+
+  function register(userData: { username: string; email: string; password: string }) {
+    // TODO: 实现实际的注册逻辑
+    setUser({
+      id: 1,
+      username: userData.username,
+      email: userData.email
+    })
   }
 
   function logout() {
-    user.value = null
-    token.value = null
-    isAuthenticated.value = false
-    localStorage.removeItem('token')
-  }
-
-  // 初始化时检查本地存储的token
-  const storedToken = localStorage.getItem('token')
-  if (storedToken) {
-    token.value = storedToken
-    // TODO: 验证token有效性并获取用户信息
+    setUser(null)
   }
 
   return {
     user,
-    token,
     isAuthenticated,
-    setUser,
-    setToken,
+    login,
+    register,
     logout
   }
 }) 

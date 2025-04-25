@@ -1,5 +1,8 @@
+import { useAuthStore } from '@/stores/auth'
 import type { RouteRecordRaw } from 'vue-router'
 import { createRouter, createWebHistory } from 'vue-router'
+import AuthLayout from '../layouts/AuthLayout.vue'
+import MainLayout from '../layouts/MainLayout.vue'
 
 const routes: RouteRecordRaw[] = [
   {
@@ -8,7 +11,7 @@ const routes: RouteRecordRaw[] = [
   },
   {
     path: '/auth',
-    component: () => import('../views/auth/AuthLayout.vue'),
+    component: AuthLayout,
     children: [
       {
         path: 'login',
@@ -21,19 +24,23 @@ const routes: RouteRecordRaw[] = [
     ]
   },
   {
-    path: '/dashboard',
-    component: () => import('../views/dashboard/DashboardView.vue'),
-    meta: { requiresAuth: true }
-  },
-  {
-    path: '/tasks',
-    component: () => import('../views/tasks/TasksView.vue'),
-    meta: { requiresAuth: true }
-  },
-  {
-    path: '/settings',
-    component: () => import('../views/settings/SettingsView.vue'),
-    meta: { requiresAuth: true }
+    path: '/',
+    component: MainLayout,
+    meta: { requiresAuth: true },
+    children: [
+      {
+        path: 'dashboard',
+        component: () => import('../views/dashboard/DashboardView.vue')
+      },
+      {
+        path: 'tasks',
+        component: () => import('../views/tasks/TasksView.vue')
+      },
+      {
+        path: 'settings',
+        component: () => import('../views/settings/SettingsView.vue')
+      }
+    ]
   }
 ]
 
@@ -45,9 +52,9 @@ const router = createRouter({
 // 路由守卫
 router.beforeEach((to, from, next) => {
   const requiresAuth = to.matched.some(record => record.meta.requiresAuth)
-  const isAuthenticated = false // TODO: 从 store 中获取认证状态
+  const authStore = useAuthStore()
 
-  if (requiresAuth && !isAuthenticated) {
+  if (requiresAuth && !authStore.isAuthenticated) {
     next('/auth/login')
   } else {
     next()
