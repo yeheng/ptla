@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { Button } from '@/components/ui/button';
 import { invoke } from "@tauri-apps/api/core";
 import { ref } from "vue";
 
@@ -27,10 +28,9 @@ async function greet() {
       </a>
     </div>
     <p>Click on the Tauri, Vite, and Vue logos to learn more.</p>
-
     <form class="row" @submit.prevent="greet">
       <input id="greet-input" v-model="name" placeholder="Enter a name..." />
-      <button type="submit">Greet</button>
+      <Button type="submit">Greet</Button>
     </form>
     <p>{{ greetMsg }}</p>
   </main>
