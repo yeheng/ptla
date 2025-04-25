@@ -20,6 +20,7 @@
               {{ item.name }}
             </RouterLink>
           </nav>
+          <LanguageSelector />
         </div>
       </div>
     </header>
@@ -32,7 +33,8 @@
 </template>
 
 <script setup lang="ts">
-import { useRoute } from 'vue-router'
+import { useRoute } from 'vue-router';
+import LanguageSelector from '../components/LanguageSelector.vue';
 
 const navigation = [
   { name: '仪表盘', href: '/dashboard' },

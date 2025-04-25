@@ -1,7 +1,6 @@
 import { useAuthStore } from '@/stores/auth'
 import type { RouteRecordRaw } from 'vue-router'
 import { createRouter, createWebHistory } from 'vue-router'
-import AuthLayout from '../layouts/AuthLayout.vue'
 import MainLayout from '../layouts/MainLayout.vue'
 
 const routes: RouteRecordRaw[] = [
@@ -11,7 +10,7 @@ const routes: RouteRecordRaw[] = [
   },
   {
     path: '/auth',
-    component: AuthLayout,
+    component: MainLayout,
     children: [
       {
         path: 'login',

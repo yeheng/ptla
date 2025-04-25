@@ -1,0 +1,115 @@
+{
+  "app": {
+    "title": "Task Management",
+    "newTask": "New Task",
+    "editTask": "Edit Task",
+    "deleteTask": "Delete Task"
+  },
+  "task": {
+    "title": "Title",
+    "description": "Description",
+    "status": "Status",
+    "priority": "Priority",
+    "dueDate": "Due Date",
+    "actions": "Actions"
+  },
+  "status": {
+    "pending": "Pending",
+    "in_progress": "In Progress",
+    "completed": "Completed",
+    "cancelled": "Cancelled"
+  },
+  "priority": {
+    "low": "Low",
+    "medium": "Medium",
+    "high": "High"
+  },
+  "button": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "create": "Create",
+    "edit": "Edit",
+    "delete": "Delete"
+  },
+  "form": {
+    "enterTitle": "Enter task title",
+    "enterDescription": "Enter task description",
+    "modifyTask": "Modify task information",
+    "fillTaskInfo": "Fill in task information"
+  },
+  "language": {
+    "name": "English",
+    "select": "Select language"
+  },
+  "settings": {
+    "title": "Settings",
+    "save": "Save Changes",
+    "saveSuccess": "Settings saved successfully",
+    "profile": {
+      "title": "Profile",
+      "username": "Username",
+      "email": "Email"
+    },
+    "theme": {
+      "title": "Theme",
+      "mode": "Theme Mode",
+      "light": "Light",
+      "dark": "Dark",
+      "system": "System"
+    },
+    "notifications": {
+      "title": "Notifications",
+      "email": "Email Notifications",
+      "desktop": "Desktop Notifications"
+    }
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "stats": {
+      "totalTasks": "Total Tasks",
+      "pendingTasks": "Pending Tasks",
+      "inProgressTasks": "In Progress",
+      "completedTasks": "Completed Tasks"
+    },
+    "recentTasks": {
+      "title": "Recent Tasks",
+      "description": "Your most recent tasks"
+    },
+    "taskStats": {
+      "title": "Task Statistics",
+      "description": "Your task completion statistics"
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Sign in",
+      "description": "Enter your credentials to sign in",
+      "username": "Username",
+      "usernamePlaceholder": "Enter your username",
+      "password": "Password",
+      "passwordPlaceholder": "Enter your password",
+      "submit": "Sign in",
+      "loggingIn": "Signing in...",
+      "error": "Login failed",
+      "or": "OR",
+      "createAccount": "Create new account"
+    },
+    "register": {
+      "title": "Create an account",
+      "username": "Username",
+      "usernamePlaceholder": "Enter your username",
+      "email": "Email",
+      "emailPlaceholder": "Enter your email",
+      "password": "Password",
+      "passwordPlaceholder": "Enter your password",
+      "confirmPassword": "Confirm Password",
+      "confirmPasswordPlaceholder": "Confirm your password",
+      "submit": "Register",
+      "registering": "Registering...",
+      "passwordMismatch": "Passwords do not match",
+      "error": "Registration failed",
+      "haveAccount": "Already have an account?",
+      "loginLink": "Sign in"
+    }
+  }
+} 

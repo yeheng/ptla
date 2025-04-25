@@ -1,0 +1,115 @@
+{
+  "app": {
+    "title": "任务管理",
+    "newTask": "新建任务",
+    "editTask": "编辑任务",
+    "deleteTask": "删除任务"
+  },
+  "task": {
+    "title": "标题",
+    "description": "描述",
+    "status": "状态",
+    "priority": "优先级",
+    "dueDate": "截止日期",
+    "actions": "操作"
+  },
+  "status": {
+    "pending": "待处理",
+    "in_progress": "进行中",
+    "completed": "已完成",
+    "cancelled": "已取消"
+  },
+  "priority": {
+    "low": "低",
+    "medium": "中",
+    "high": "高"
+  },
+  "button": {
+    "save": "保存",
+    "cancel": "取消",
+    "create": "创建",
+    "edit": "编辑",
+    "delete": "删除"
+  },
+  "form": {
+    "enterTitle": "输入任务标题",
+    "enterDescription": "输入任务描述",
+    "modifyTask": "修改任务信息",
+    "fillTaskInfo": "填写任务信息"
+  },
+  "language": {
+    "name": "中文",
+    "select": "选择语言"
+  },
+  "settings": {
+    "title": "设置",
+    "save": "保存更改",
+    "saveSuccess": "设置保存成功",
+    "profile": {
+      "title": "个人资料",
+      "username": "用户名",
+      "email": "邮箱"
+    },
+    "theme": {
+      "title": "主题",
+      "mode": "主题模式",
+      "light": "浅色",
+      "dark": "深色",
+      "system": "跟随系统"
+    },
+    "notifications": {
+      "title": "通知",
+      "email": "邮件通知",
+      "desktop": "桌面通知"
+    }
+  },
+  "dashboard": {
+    "title": "仪表盘",
+    "stats": {
+      "totalTasks": "总任务数",
+      "pendingTasks": "待处理任务",
+      "inProgressTasks": "进行中",
+      "completedTasks": "已完成任务"
+    },
+    "recentTasks": {
+      "title": "最近任务",
+      "description": "您最近的任务"
+    },
+    "taskStats": {
+      "title": "任务统计",
+      "description": "您的任务完成统计"
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "登录账户",
+      "description": "输入您的账户信息以登录",
+      "username": "用户名",
+      "usernamePlaceholder": "请输入用户名",
+      "password": "密码",
+      "passwordPlaceholder": "请输入密码",
+      "submit": "登录",
+      "loggingIn": "登录中...",
+      "error": "登录失败",
+      "or": "或者",
+      "createAccount": "创建新账户"
+    },
+    "register": {
+      "title": "创建账号",
+      "username": "用户名",
+      "usernamePlaceholder": "请输入用户名",
+      "email": "邮箱",
+      "emailPlaceholder": "请输入邮箱",
+      "password": "密码",
+      "passwordPlaceholder": "请输入密码",
+      "confirmPassword": "确认密码",
+      "confirmPasswordPlaceholder": "请确认密码",
+      "submit": "注册",
+      "registering": "注册中...",
+      "passwordMismatch": "两次输入的密码不一致",
+      "error": "注册失败",
+      "haveAccount": "已有账号？",
+      "loginLink": "登录"
+    }
+  }
+} 
