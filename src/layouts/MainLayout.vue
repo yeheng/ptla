@@ -5,7 +5,7 @@
       <div class="container flex h-14 items-center">
         <div class="mr-4 flex">
           <a class="mr-6 flex items-center space-x-2" href="/">
-            <span class="font-bold">Todo App</span>
+            <span class="font-bold">Personal TODO List Application</span>
           </a>
         </div>
         <div class="flex flex-1 items-center justify-between space-x-2 md:justify-end">
